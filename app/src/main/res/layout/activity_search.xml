@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="116dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewFJ"
+        android:layout_width="228dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="10dp"
+        android:text="FreelancerJob"
+        android:textColor="#FF9800"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="48dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/logo2"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imgInfo"
+        android:layout_width="104dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFJ"
+        app:srcCompat="@drawable/login" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="66dp"
+        android:layout_height="30dp"
+        android:text="HS"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgInfo"
+        app:layout_constraintEnd_toEndOf="@+id/imgInfo"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="@+id/imgInfo"
+        app:layout_constraintTop_toTopOf="@+id/imgInfo" />
+
+    <Button
+        android:id="@+id/lineHeader"
+        android:layout_width="284dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#03A9F4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgInfo" />
+
+    <Button
+        android:id="@+id/lineFooder"
+        android:layout_width="370dp"
+        android:layout_height="3dp"
+        android:backgroundTint="#03A9F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lineHeader"
+        app:layout_constraintVertical_bias="0.839"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="175dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="16dp"
+        android:text="Tìm Theo Yêu Cầu"
+        android:textAlignment="center"
+        android:textColor="#FF9800"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lineHeader"
+        tools:ignore="TextContrastCheck" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="277dp"
+        android:layout_height="38dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/lineFooder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="278dp"
+        android:layout_height="36dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/lineFooder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner1"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="277dp"
+        android:layout_height="38dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/lineFooder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2"
+        app:layout_constraintVertical_bias="0.156" />
+
+    <Button
+        android:id="@+id/buttonXacNhan"
+        android:layout_width="133dp"
+        android:layout_height="46dp"
+        android:text="Xác Nhận"
+        android:backgroundTint="#FF9800"
+        app:layout_constraintBottom_toTopOf="@+id/lineFooder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

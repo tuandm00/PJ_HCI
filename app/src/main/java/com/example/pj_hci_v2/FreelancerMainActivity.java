@@ -47,6 +47,7 @@ public class FreelancerMainActivity extends AppCompatActivity implements OnItemC
 
 
 
+
     }
 
     //Click vào nội dung để xem chi tiết
