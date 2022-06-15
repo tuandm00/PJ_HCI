@@ -10,19 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PJ_HCI_v2">
         <activity
-            android:name=".SearchActivity"
+
+            android:name=".Freelancer_P6"
+            android:exported="false" />
+        <activity
+            android:name=".Freelancer_P5"
+            android:exported="false" />
+        <activity
+            android:name=".Freelancer_P4"
+
             android:exported="false" />
         <activity
             android:name=".Freelancer_P3"
             android:exported="false" />
         <activity
-            android:name=".Freelancer_P1"
+            android:name=".FreelancerMainActivity"
             android:exported="false" />
         <activity
             android:name=".Freelancer_P2"
             android:exported="false" />
         <activity
-            android:name=".FreelancerMainActivity"
+            android:name=".Freelancer_P1"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
