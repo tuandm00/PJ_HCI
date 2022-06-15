@@ -44,7 +44,7 @@ public class FreelancerMainActivity extends AppCompatActivity {
         });
 
         //Click vào nội dung để xem chi tiết
-        public interfa
+
 
 
 
