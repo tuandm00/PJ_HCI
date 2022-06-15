@@ -13,8 +13,11 @@ import java.util.ArrayList;
 
 public class FreelancerAdapter extends RecyclerView.Adapter<FreelancerAdapter.ViewHolder> {
     private ArrayList<Freelancer> freelancerArrayList;
-    public FreelancerAdapter(ArrayList<Freelancer> userList) {
+    private OnItemClickListener listener;
+    private Freelancer freelancer;
+    public FreelancerAdapter(ArrayList<Freelancer> userList, OnItemClickListener listener) {
         this.freelancerArrayList = userList;
+        this.listener = listener;
     }
 
     @NonNull
@@ -63,6 +66,14 @@ public class FreelancerAdapter extends RecyclerView.Adapter<FreelancerAdapter.Vi
             txtDiadiem = itemView.findViewById(R.id.textViewDiadiem);
             txtKyang = itemView.findViewById(R.id.textViewKynang);
             txtNgaydang = itemView.findViewById(R.id.textViewNgaydang);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    listener.onItemClick(freelancer);
+                }
+            });
+
         }
     }
 
