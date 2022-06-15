@@ -308,9 +308,9 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView9" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonLienhetructiep"
         android:layout_width="194dp"
-        android:layout_height="39dp"
+        android:layout_height="48dp"
         android:layout_marginTop="84dp"
         android:layout_marginEnd="136dp"
         android:text="Liên hệ trực tiếp"
@@ -319,26 +319,26 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView9" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonQuaylai"
         android:layout_width="140dp"
-        android:layout_height="39dp"
+        android:layout_height="48dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
         android:text="Quay lại"
         android:textSize="10sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonLienhetructiep" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonTrangchu"
         android:layout_width="139dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:text="Trang chủ"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonLienhetructiep" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -347,7 +347,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="60dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLienhetructiep"
         app:srcCompat="@drawable/img_4" />
 
     <ImageView
@@ -357,7 +357,7 @@
         android:layout_marginTop="60dp"
         android:layout_marginEnd="44dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLienhetructiep"
         app:srcCompat="@drawable/img_5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
