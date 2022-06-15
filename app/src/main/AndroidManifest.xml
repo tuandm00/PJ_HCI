@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PJ_HCI_v2">
         <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
+        <activity
             android:name=".Freelancer_P3"
             android:exported="false" />
         <activity
