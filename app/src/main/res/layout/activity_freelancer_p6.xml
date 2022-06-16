@@ -109,7 +109,7 @@
         android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView33"
-        app:srcCompat="@drawable/mail" />
+        app:srcCompat="@drawable/mail1" />
 
     <ImageView
         android:id="@+id/imageView13"

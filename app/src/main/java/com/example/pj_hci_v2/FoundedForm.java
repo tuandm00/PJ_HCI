@@ -1,11 +1,11 @@
 package com.example.pj_hci_v2;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
-//cmt ne
+import androidx.appcompat.app.AppCompatActivity;
+
+public class FoundedForm extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -32,7 +32,7 @@
             android:name=".Freelancer_P2"
             android:exported="false" />
         <activity
-            android:name=".Freelancer_P1"
+            android:name=".FoundedForm"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,14 +1,14 @@
 package com.example.pj_hci_v2;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
-//cmt ne
+import androidx.appcompat.app.AppCompatActivity;
+
+public class ProfileForm extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_founded_form);
+        setContentView(R.layout.activity_profile_form);
     }
 }
