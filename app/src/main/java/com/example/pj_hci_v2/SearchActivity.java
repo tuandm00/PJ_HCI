@@ -15,9 +15,9 @@ import android.widget.TextView;
 public class SearchActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
     private Spinner spinner, spinner2, spinner3;
-    private static final String[] paths = {"Chuyên Ngành", "item1", "item2", "item3"};
-    private static final String[] paths2 = {"Chọn Lĩnh Vực", "item4", "item5", "item6"};
-    private static final String[] paths3 = {"Địa Điểm", "item7", "item8", "item9"};
+    private static final String[] paths = {"Chuyên Ngành","Viết bài PR & Quảng cáo", "Lập trình web", "Thiết kế LOGO"};
+    private static final String[] paths2 = {"Chọn Lĩnh Vực", "IT", "Thiết kế", "Kinh tế"};
+    private static final String[] paths3 = {"Địa Điểm", "Hà Nội", "TPHCM", "Thanh Hóa"};
     private Button btnXN; //nút xác nhận
     private ImageView imgLogo; //bấm cái icon info
     private TextView txtLogo; //bấm vào chữ Freelancer
@@ -52,7 +52,7 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
         btnXN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SearchActivity.this, MainActivity.class);
+                Intent intent = new Intent(SearchActivity.this, FreelancerMainActivity.class);
                 startActivity(intent);
             }
         });
@@ -62,7 +62,7 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
         imgLogo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(SearchActivity.this, MainActivity.class);
+                Intent intent1 = new Intent(SearchActivity.this, FreelancerMainActivity.class);
                 startActivity(intent1);
             }
         });
@@ -73,7 +73,7 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
         txtLogo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(SearchActivity.this, MainActivity.class);
+                Intent intent2 = new Intent(SearchActivity.this, Freelancer_P1.class);
                 startActivity(intent2);
             }
         });

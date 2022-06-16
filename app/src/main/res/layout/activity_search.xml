@@ -71,35 +71,11 @@
         app:layout_constraintStart_toStartOf="@+id/imgInfo"
         app:layout_constraintTop_toTopOf="@+id/imgInfo" />
 
-    <Button
-        android:id="@+id/lineHeader"
-        android:layout_width="284dp"
-        android:layout_height="3dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="#03A9F4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgInfo" />
-
-    <Button
-        android:id="@+id/lineFooder"
-        android:layout_width="370dp"
-        android:layout_height="3dp"
-        android:backgroundTint="#03A9F4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.609"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lineHeader"
-        app:layout_constraintVertical_bias="0.839"
-        tools:ignore="SpeakableTextPresentCheck" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="175dp"
         android:layout_height="31dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="164dp"
         android:text="Tìm Theo Yêu Cầu"
         android:textAlignment="center"
         android:textColor="#FF9800"
@@ -107,50 +83,44 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lineHeader"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck" />
 
     <Spinner
         android:id="@+id/spinner1"
         android:layout_width="277dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="60dp"
         android:spinnerMode="dropdown"
-        app:layout_constraintBottom_toTopOf="@+id/lineFooder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.102" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Spinner
         android:id="@+id/spinner2"
         android:layout_width="278dp"
-        android:layout_height="36dp"
+        android:layout_height="48dp"
         android:spinnerMode="dropdown"
-        app:layout_constraintBottom_toTopOf="@+id/lineFooder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner1"
-        app:layout_constraintVertical_bias="0.095" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner1" />
 
     <Spinner
         android:id="@+id/spinner3"
         android:layout_width="277dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:spinnerMode="dropdown"
-        app:layout_constraintBottom_toTopOf="@+id/lineFooder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner2"
-        app:layout_constraintVertical_bias="0.156" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
 
     <Button
         android:id="@+id/buttonXacNhan"
         android:layout_width="133dp"
-        android:layout_height="46dp"
-        android:text="Xác Nhận"
+        android:layout_height="48dp"
         android:backgroundTint="#FF9800"
-        app:layout_constraintBottom_toTopOf="@+id/lineFooder"
+        android:text="Xác Nhận"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner3" />

@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class Freelancer_P1 extends AppCompatActivity {
-    Button btnDanhsachcongviec;
+    Button btnDanhsachcongviec, btnTimkiemtheoyeucau;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,5 +22,14 @@ public class Freelancer_P1 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btnTimkiemtheoyeucau = (Button) findViewById(R.id.buttonTimkiemtheoyeucau);
+        btnTimkiemtheoyeucau.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Freelancer_P1.this,SearchActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
