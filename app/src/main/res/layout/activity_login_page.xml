@@ -161,15 +161,15 @@
 
     <EditText
         android:id="@+id/txtPassword"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:backgroundTint="#8F000000"
         android:ems="10"
         android:hint="Password"
+        android:inputType="textPassword"
         android:textColor="@color/black"
         android:textColorHint="#8F000000"
-        android:backgroundTint="#8F000000"
-        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/txtUsername"
         app:layout_constraintHorizontal_bias="0.0"
@@ -214,5 +214,6 @@
         app:layout_constraintStart_toStartOf="@+id/btnLogin"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin"
         app:layout_constraintVertical_bias="0.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
