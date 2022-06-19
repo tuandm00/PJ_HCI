@@ -2,6 +2,8 @@ package com.example.pj_hci_v2;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -15,7 +17,7 @@ public class Login_Page extends AppCompatActivity {
     RadioButton rememberMe;
     Button login;
     TextView forgotUsernameOrPassword;
-    ImageView signInWithGoogle, lightMode;
+    ImageView signInWithGoogle, lightMode, hiddenPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,24 +32,20 @@ public class Login_Page extends AppCompatActivity {
         login = (Button) findViewById(R.id.btnLogin);
         signInWithGoogle = (ImageView) findViewById(R.id.imgSignInWithGoogle);
         lightMode = (ImageView) findViewById(R.id.imgLightMode);
+        hiddenPassword = (ImageView) findViewById(R.id.imgHiddenPassword);
 
-        forgotUsernameOrPassword.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent forgotUsername = new Intent(Login_Page.this, com.example.pj_hci_v2.Forgot_Password_Page.class);
-                startActivity(forgotUsername);
-            }
-        });
-
+        //Login into the App
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String txtPassword = password.getText().toString();
                 String txtUsername = username.getText().toString();
 
+                // Username or Password is empty
                 if (txtPassword.equals("") || txtUsername.equals("")) {
                     errorMessage.setText("Username or Password cannot be empty");
                 } else {
+                    // Using account Admin to Login
                     if (txtPassword.equals("admin") && txtUsername.equals("admin")) {
                         Intent loginChange = new Intent(Login_Page.this, com.example.pj_hci_v2.Home_Page.class);
                         startActivity(loginChange);
@@ -58,9 +56,39 @@ public class Login_Page extends AppCompatActivity {
             }
         });
 
+        // Show/Hide password
+        hiddenPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Check Password is hidden or not
+                if (password.getTransformationMethod().equals(PasswordTransformationMethod.getInstance())) {
+                    // change icon from hidden to show password
+                    hiddenPassword.setImageResource(R.drawable.show_password);
+                    // Set password as show
+                    password.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                } else {
+                    hiddenPassword.setImageResource(R.drawable.black_eye);
+                    password.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                }
+
+            }
+        });
+
+        // Forgot Username or Password
+        forgotUsernameOrPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Switch to Forgot Password Page
+                Intent forgotUsername = new Intent(Login_Page.this, com.example.pj_hci_v2.Forgot_Password_Page.class);
+                startActivity(forgotUsername);
+            }
+        });
+
+        // Using Google to Sign in
         signInWithGoogle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Switch to Google Sign In Page
                 Intent googleIntent = new Intent(Login_Page.this, com.example.pj_hci_v2.Google_Sign_In.class);
                 startActivity(googleIntent);
             }

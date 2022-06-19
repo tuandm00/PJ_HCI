@@ -24,7 +24,7 @@ public class Forgot_Password_Page extends AppCompatActivity {
         btnSubmit = (Button) findViewById(R.id.btnSubmit);
         txtWrongEmail = (TextView) findViewById(R.id.txtWrongEmailAddress);
 
-
+        //Go back to login_page
         imgGoBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -33,13 +33,16 @@ public class Forgot_Password_Page extends AppCompatActivity {
             }
         });
 
+        //Submit email
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String txtEmail = emailAddress.getText().toString();
+                // email is empty
                 if (txtEmail.equals("")) {
                     txtWrongEmail.setText("Please input your email address");
                 } else {
+                    // email must contain @ and after @ is "fpt.edu.vn"
                     if (txtEmail.contains("@")) {
                         String[] split = txtEmail.split("@");
                         String emailFormat = split[1];

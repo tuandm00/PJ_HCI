@@ -24,14 +24,7 @@ public class Home_Page extends AppCompatActivity {
         lostAndFound = (Button) findViewById(R.id.btnLostFound);
         freelanceJob = (Button) findViewById(R.id.btnFreelanceJob);
 
-        imgLogout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent goBack = new Intent(Home_Page.this, Login_Page.class);
-                startActivity(goBack);
-            }
-        });
-
+        // Switch to Lost & Found page
         imgLostAndFound.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,6 +33,7 @@ public class Home_Page extends AppCompatActivity {
             }
         });
 
+        // Switch to Lost & Found page
         lostAndFound.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,6 +41,7 @@ public class Home_Page extends AppCompatActivity {
             }
         });
 
+        // Switch to Free Lance Job page
         imgFreelanceJob.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,11 +50,21 @@ public class Home_Page extends AppCompatActivity {
             }
         });
 
+        // Switch to Free Lance Job page
         freelanceJob.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intentFreeLanceJob = new Intent(Home_Page.this, Freelancer_P1.class);
                 startActivity(intentFreeLanceJob);
+            }
+        });
+
+        // Logout and back to login_page
+        imgLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goBack = new Intent(Home_Page.this, Login_Page.class);
+                startActivity(goBack);
             }
         });
     }
