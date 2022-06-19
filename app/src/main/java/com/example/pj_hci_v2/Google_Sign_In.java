@@ -21,6 +21,7 @@ public class Google_Sign_In extends AppCompatActivity {
         account1 = (TextView) findViewById(R.id.txtAccount1);
         account2 = (TextView) findViewById(R.id.txtAccount2);
 
+        // Back to login_page
         goBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,6 +30,7 @@ public class Google_Sign_In extends AppCompatActivity {
             }
         });
 
+        // Kayaba Zeref account
         account1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,6 +39,7 @@ public class Google_Sign_In extends AppCompatActivity {
             }
         });
 
+        // Group 3 HCI account
         account2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

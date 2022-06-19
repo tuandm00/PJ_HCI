@@ -17,6 +17,7 @@ public class Confirm_Password_Reset_Page extends AppCompatActivity {
 
         txtGoBack = (TextView) findViewById(R.id.txtGoBackToLoginScreen);
 
+        // Back to login_page
         txtGoBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
