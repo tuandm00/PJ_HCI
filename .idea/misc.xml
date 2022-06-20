@@ -4,17 +4,49 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Code4AndroiStudio/PJ_HCI_v2/app/src/main/res/layout/activity_freelancer.xml" value="0.1911231884057971" />
-        <entry key="..\:/Code4AndroiStudio/PJ_HCI_v2/app/src/main/res/layout/activity_freelancer_main.xml" value="0.1554850407978241" />
-        <entry key="..\:/Code4AndroiStudio/PJ_HCI_v2/app/src/main/res/layout/activity_freelancer_p1.xml" value="0.1911231884057971" />
+        <entry key="..\:/Code4AndroiStudio/PJ_HCI_v2/app/src/main/res/layout/activity_freelancer_main.xml" value="0.264" />
+        <entry key="..\:/Code4AndroiStudio/PJ_HCI_v2/app/src/main/res/layout/activity_freelancer_p1.xml" value="0.20244622522142555" />
         <entry key="..\:/Code4AndroiStudio/PJ_HCI_v2/app/src/main/res/layout/activity_freelancer_p2.xml" value="0.1911231884057971" />
         <entry key="..\:/Code4AndroiStudio/PJ_HCI_v2/app/src/main/res/layout/activity_freelancer_p3.xml" value="0.25" />
+        <entry key="..\:/Code4AndroiStudio/PJ_HCI_v2/app/src/main/res/layout/activity_freelancer_p4.xml" value="0.4" />
+        <entry key="..\:/Code4AndroiStudio/PJ_HCI_v2/app/src/main/res/layout/activity_freelancer_p5.xml" value="0.1554850407978241" />
+        <entry key="..\:/Code4AndroiStudio/PJ_HCI_v2/app/src/main/res/layout/activity_freelancer_p6.xml" value="0.20521590423257802" />
+        <entry key="..\:/Code4AndroiStudio/PJ_HCI_v2/app/src/main/res/layout/activity_freelancer_p7.xml" value="0.4" />
+        <entry key="..\:/Code4AndroiStudio/PJ_HCI_v2/app/src/main/res/layout/activity_freelancer_p8.xml" value="0.1554850407978241" />
         <entry key="..\:/Code4AndroiStudio/PJ_HCI_v2/app/src/main/res/layout/activity_main.xml" value="0.1911231884057971" />
         <entry key="..\:/Code4AndroiStudio/PJ_HCI_v2/app/src/main/res/layout/activity_search.xml" value="0.20521590423257802" />
         <entry key="..\:/Code4AndroiStudio/PJ_HCI_v2/app/src/main/res/layout/info_freelancer.xml" value="0.1911231884057971" />
         <entry key="..\:/FPTProject/MobileApp/PJ_HCI/app/src/main/res/layout/activity_lost_form.xml" value="0.16502778965369816" />
         <entry key="..\:/FPTProject/MobileApp/PJ_HCI/app/src/main/res/layout/activity_main.xml" value="0.16502778965369816" />
         <entry key="..\:/FPTProject/MobileApp/PJ_HCI/app/src/main/res/layout/activity_profile_form.xml" value="0.176" />
+        <entry key="..\:/FPT_HCI201/Project/Group_Project/PJ_HCI/app/src/main/res/layout/activity_confirm_form.xml" value="0.20008550662676358" />
+        <entry key="..\:/FPT_HCI201/Project/Group_Project/PJ_HCI/app/src/main/res/layout/activity_confirm_password_reset_page.xml" value="0.20008550662676358" />
+        <entry key="..\:/FPT_HCI201/Project/Group_Project/PJ_HCI/app/src/main/res/layout/activity_detail_form.xml" value="0.176" />
+        <entry key="..\:/FPT_HCI201/Project/Group_Project/PJ_HCI/app/src/main/res/layout/activity_forgot_password_page.xml" value="0.20008550662676358" />
+        <entry key="..\:/FPT_HCI201/Project/Group_Project/PJ_HCI/app/src/main/res/layout/activity_founded_form.xml" value="0.20008550662676358" />
+        <entry key="..\:/FPT_HCI201/Project/Group_Project/PJ_HCI/app/src/main/res/layout/activity_freelancer_p1.xml" value="0.264" />
+        <entry key="..\:/FPT_HCI201/Project/Group_Project/PJ_HCI/app/src/main/res/layout/activity_freelancer_p3.xml" value="0.20008550662676358" />
+        <entry key="..\:/FPT_HCI201/Project/Group_Project/PJ_HCI/app/src/main/res/layout/activity_freelancer_p4.xml" value="0.20008550662676358" />
+        <entry key="..\:/FPT_HCI201/Project/Group_Project/PJ_HCI/app/src/main/res/layout/activity_freelancer_p5.xml" value="0.20008550662676358" />
+        <entry key="..\:/FPT_HCI201/Project/Group_Project/PJ_HCI/app/src/main/res/layout/activity_freelancer_p8.xml" value="0.20008550662676358" />
+        <entry key="..\:/FPT_HCI201/Project/Group_Project/PJ_HCI/app/src/main/res/layout/activity_google_sign_in.xml" value="0.20008550662676358" />
+        <entry key="..\:/FPT_HCI201/Project/Group_Project/PJ_HCI/app/src/main/res/layout/activity_home_page.xml" value="0.20008550662676358" />
+        <entry key="..\:/FPT_HCI201/Project/Group_Project/PJ_HCI/app/src/main/res/layout/activity_login_page.xml" value="0.2" />
+        <entry key="..\:/FPT_HCI201/Project/Group_Project/PJ_HCI/app/src/main/res/layout/activity_lost_form.xml" value="0.20008550662676358" />
+        <entry key="..\:/FPT_HCI201/Project/Group_Project/PJ_HCI/app/src/main/res/layout/activity_main.xml" value="0.20008550662676358" />
+        <entry key="..\:/FPT_HCI201/Project/Group_Project/PJ_HCI/app/src/main/res/layout/activity_profile_form.xml" value="0.20008550662676358" />
+        <entry key="..\:/FPT_HCI201/Project/Group_Project/PJ_HCI/app/src/main/res/layout/activity_search.xml" value="0.20008550662676358" />
+        <entry key="..\:/FPT_HCI201/Project/Group_Project/PJ_HCI/app/src/main/res/layout/info_freelancer.xml" value="0.20008550662676358" />
         <entry key="..\:/HCI-HungLD/New folder/PJ_HCI/app/src/main/res/layout/activity_search.xml" value="0.378125" />
+        <entry key="..\:/Ky7/HCI+group/PJ_HCI/app/src/main/res/layout/activity_freelancer_p1.xml" value="0.20416666666666666" />
+        <entry key="..\:/Ky7/HCI+group/PJ_HCI/app/src/main/res/layout/activity_home_page.xml" value="0.20416666666666666" />
+        <entry key="..\:/Ky7/HCI+group/PJ_HCI/app/src/main/res/layout/activity_main_mat_do.xml" value="0.20416666666666666" />
+        <entry key="..\:/Ky7/HCI+group/PJ_HCI/app/src/main/res/layout/activity_main_nhat_do.xml" value="0.20416666666666666" />
+        <entry key="..\:/Ky7/HCI+group/PJ_HCI/app/src/main/res/layout/activity_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Ky7/HCI+group/PJ_HCI/app/src/main/res/layout/activity_profile_form.xml" value="0.20416666666666666" />
+        <entry key="..\:/Ky7/HCI+group/PJ_HCI/app/src/main/res/layout/info_freelancer.xml" value="0.20416666666666666" />
+        <entry key="..\:/Ky7/HCI+group/PJ_HCI/app/src/main/res/layout/post.xml" value="0.20416666666666666" />
+        <entry key="..\:/Ky7/HCI+group/PJ_HCI/app/src/main/res/menu/menu_main.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

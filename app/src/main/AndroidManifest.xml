@@ -10,7 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PJ_HCI_v2">
         <activity
+            android:name=".FoundedForm"
+            android:exported="false" />
+        <activity
             android:name=".SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Freelancer_P8"
+            android:exported="false" />
+        <activity
+            android:name=".Freelancer_P7"
             android:exported="false" />
         <activity
             android:name=".Freelancer_P6"
@@ -32,7 +41,7 @@
             android:name=".Freelancer_P2"
             android:exported="false" />
         <activity
-            android:name=".FoundedForm"
+            android:name=".Freelancer_P1"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
