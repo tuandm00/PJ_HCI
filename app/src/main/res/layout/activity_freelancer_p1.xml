@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Freelancer_P1">
 
     <ImageView
@@ -114,6 +116,7 @@
         android:layout_width="362dp"
         android:layout_height="92dp"
         android:layout_marginTop="520dp"
+        android:layout_marginEnd="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
@@ -124,9 +127,12 @@
         android:id="@+id/imageView6"
         android:layout_width="51dp"
         android:layout_height="46dp"
+
         android:layout_marginTop="540dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.986"
+        android:layout_marginStart="356dp"
+        android:layout_marginTop="620dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_5" />
