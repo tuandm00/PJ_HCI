@@ -28,8 +28,8 @@ public class Home_Page extends AppCompatActivity {
         imgLostAndFound.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intentLostAndFound = new Intent(Home_Page.this, Freelancer_P1.class);
-//                startActivity(intentLostAndFound);
+                Intent intentLostAndFound = new Intent(Home_Page.this, Menu.class);
+                startActivity(intentLostAndFound);
             }
         });
 
