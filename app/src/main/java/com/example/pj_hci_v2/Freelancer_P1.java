@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 public class Freelancer_P1 extends AppCompatActivity {
-    Button btnDanhsachcongviec, btnTimkiemtheoyeucau;
+    Button btnDanhsachcongviec, btnTimkiemtheoyeucau, btnDaluu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +27,14 @@ public class Freelancer_P1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Freelancer_P1.this,SearchActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnDaluu = (Button) findViewById(R.id.buttonDaluu);
+        btnDaluu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Freelancer_P1.this,Freelancer_P8.class);
                 startActivity(intent);
             }
         });

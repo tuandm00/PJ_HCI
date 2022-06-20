@@ -47,6 +47,12 @@
             android:name=".SearchActivity"
             android:exported="false" />
         <activity
+            android:name=".Freelancer_P8"
+            android:exported="false" />
+        <activity
+            android:name=".Freelancer_P7"
+            android:exported="false" />
+        <activity
             android:name=".Freelancer_P6"
             android:exported="false" />
         <activity
@@ -66,7 +72,7 @@
             android:name=".Freelancer_P2"
             android:exported="false" />
         <activity
-            android:name=".FoundedForm"
+            android:name=".Freelancer_P1"
             android:exported="true">
 
         </activity>
