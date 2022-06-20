@@ -70,6 +70,23 @@
             android:exported="true">
 
         </activity>
+
+
+        <activity
+            android:name=".Menu"
+            android:exported="false" />
+        <activity
+            android:name=".Notification"
+            android:exported="false" />
+        <activity
+            android:name=".MainMatDo"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+        </activity>
+
     </application>
 
 </manifest>
