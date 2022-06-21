@@ -69,12 +69,6 @@
         <activity
             android:name=".Freelancer_P2"
             android:exported="false" />
-        <activity
-            android:name=".Freelancer_P1"
-            android:exported="true">
-
-        </activity>
-
 
         <activity
             android:name=".Menu"

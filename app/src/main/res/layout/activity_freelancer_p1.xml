@@ -126,7 +126,6 @@
         android:id="@+id/imageView6"
         android:layout_width="51dp"
         android:layout_height="46dp"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.986"
         android:layout_marginStart="356dp"
