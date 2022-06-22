@@ -6,14 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class Freelancer_P1 extends AppCompatActivity {
-    Button btnDanhsachcongviec, btnTimkiemtheoyeucau;
+    Button btnDanhsachcongviec, btnTimkiemtheoyeucau, btnDaluu;
+    ImageView imgBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_freelancer_p1);
-
         btnDanhsachcongviec = (Button) findViewById(R.id.buttonDanhsachcongviec);
         btnDanhsachcongviec.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,6 +28,22 @@ public class Freelancer_P1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Freelancer_P1.this,SearchActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnDaluu = (Button) findViewById(R.id.buttonDaluu);
+        btnDaluu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Freelancer_P1.this,Freelancer_P8.class);
+                startActivity(intent);
+            }
+        });
+        imgBack = (ImageView) findViewById(R.id.imageView3);
+        imgBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Freelancer_P1.this, Home_Page.class);
                 startActivity(intent);
             }
         });

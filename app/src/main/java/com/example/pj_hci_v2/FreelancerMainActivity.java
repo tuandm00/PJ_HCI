@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -17,6 +18,7 @@ public class FreelancerMainActivity extends AppCompatActivity implements OnItemC
     ArrayList<Freelancer> freelancerArrayList;
     Button btnQuaylai, btnTrangke;
     TextView txtTieude, txtGiatien, txtNoidung, txtNgtuyendung, txtDiadiem, txtKynang, txtNgaydang;
+    ImageView imgBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,17 +36,15 @@ public class FreelancerMainActivity extends AppCompatActivity implements OnItemC
         rvFreelancer.setAdapter(freelancerAdapter);
         rvFreelancer.setLayoutManager(new LinearLayoutManager(this));
 
-        //Nút quay lại
-        btnQuaylai = (Button) findViewById(R.id.buttonQuaylai);
-        btnQuaylai.setOnClickListener(new View.OnClickListener() {
+
+        imgBack = (ImageView) findViewById(R.id.imageView3);
+        imgBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FreelancerMainActivity.this, Freelancer_P1.class);
+                Intent intent = new Intent(FreelancerMainActivity.this,Freelancer_P1.class);
                 startActivity(intent);
             }
         });
-
-
 
 
 

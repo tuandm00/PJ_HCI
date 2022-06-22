@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <ImageView
+        android:id="@+id/turnback"
+        android:layout_width="59dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <TextView
+        android:id="@+id/nhatdo"
+        android:layout_width="405dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="36dp"
+        android:background="#FDCEA3"
+        android:text="Nhặt đồ"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turnback" />
+
+    <TextView
+        android:id="@+id/matdo"
+        android:layout_width="409dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32dp"
+        android:background="#FDCEA3"
+        android:text="Mất đồ"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nhatdo" />
+
+    <TextView
+        android:id="@+id/thongtintaikhoan"
+        android:layout_width="411dp"
+        android:layout_height="47dp"
+        android:background="#FDCEA3"
+        android:layout_marginTop="36dp"
+        android:gravity="center_vertical"
+        android:text="Thông tin tài khoản"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matdo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
