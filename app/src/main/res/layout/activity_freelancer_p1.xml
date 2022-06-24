@@ -114,12 +114,12 @@
         android:id="@+id/imageView5"
         android:layout_width="362dp"
         android:layout_height="92dp"
-        android:layout_marginTop="520dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="60dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.181"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDaluu"
         app:srcCompat="@drawable/img_4" />
 
     <ImageView
@@ -127,10 +127,10 @@
         android:layout_width="51dp"
         android:layout_height="46dp"
         android:layout_marginStart="356dp"
-        android:layout_marginTop="544dp"
+        android:layout_marginTop="104dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDaluu"
         app:srcCompat="@drawable/img_5" />
 </androidx.constraintlayout.widget.ConstraintLayout>
