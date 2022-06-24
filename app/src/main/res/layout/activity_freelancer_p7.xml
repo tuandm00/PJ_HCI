@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     tools:context=".Freelancer_P7">
 
     <ImageView
         android:id="@+id/imageView17"
         android:layout_width="354dp"
-        android:layout_height="23dp"
+        android:layout_height="45dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +23,7 @@
         android:gravity="center"
         android:text="Hồ sơ"
         android:textColor="#394EBC"
-        android:textSize="15sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -247,22 +247,25 @@
     <ImageView
         android:id="@+id/imageView22"
         android:layout_width="81dp"
-        android:layout_height="21dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonTrangchu"
+        app:layout_constraintVertical_bias="0.909"
         app:srcCompat="@drawable/img" />
 
     <ImageView
         android:id="@+id/imageView23"
-        android:layout_width="84dp"
-        android:layout_height="23dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="67dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.968"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.995"
+        app:layout_constraintStart_toEndOf="@+id/imageView22"
         app:layout_constraintTop_toBottomOf="@+id/buttonTrangchu"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/img_5" />
 </androidx.constraintlayout.widget.ConstraintLayout>
