@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RadioButton;
@@ -34,6 +36,18 @@ public class Login_Page extends AppCompatActivity {
         lightMode = (ImageView) findViewById(R.id.imgLightMode);
         hiddenPassword = (ImageView) findViewById(R.id.imgHiddenPassword);
 
+
+        //Login into the App using Phone Go Button
+        password.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) || (actionId == EditorInfo.IME_ACTION_DONE)) {
+                    login.performClick();
+                }
+                return false;
+            }
+        });
+
         //Login into the App
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,14 +57,14 @@ public class Login_Page extends AppCompatActivity {
 
                 // Username or Password is empty
                 if (txtPassword.equals("") || txtUsername.equals("")) {
-                    errorMessage.setText("Username or Password cannot be empty");
+                    errorMessage.setText("Tài khoản không được để trống");
                 } else {
                     // Using account Admin to Login
                     if (txtPassword.equals("admin") && txtUsername.equals("admin")) {
-                        Intent loginChange = new Intent(Login_Page.this, com.example.pj_hci_v2.Home_Page.class);
+                        Intent loginChange = new Intent(Login_Page.this, com.example.pj_hci_v2.FreelancerMainActivity.class);
                         startActivity(loginChange);
                     } else {
-                        errorMessage.setText("Wrong Username or Password");
+                        errorMessage.setText("Sai tài khoản hoặc mật khẩu");
                     }
                 }
             }

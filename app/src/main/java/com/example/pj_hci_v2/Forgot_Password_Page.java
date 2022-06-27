@@ -40,23 +40,29 @@ public class Forgot_Password_Page extends AppCompatActivity {
                 String txtEmail = emailAddress.getText().toString();
                 // email is empty
                 if (txtEmail.equals("")) {
-                    txtWrongEmail.setText("Please input your email address");
+                    txtWrongEmail.setText("Vui lòng nhập địa chỉ email");
                 } else {
                     // email must contain @ and after @ is "fpt.edu.vn"
                     if (txtEmail.contains("@")) {
                         String[] split = txtEmail.split("@");
-                        String emailFormat = split[1];
-                        if (emailFormat.equals("fpt.edu.vn")) {
-                            Intent intentSubmit = new Intent(Forgot_Password_Page.this, Confirm_Password_Reset_Page.class);
-                            startActivity(intentSubmit);
+
+                        if (split.equals("")) {
+                            txtWrongEmail.setText("Vui lòng nhập địa chỉ email");
                         } else {
-                            txtWrongEmail.setText("Please use email with correct format: @fpt.edu.vn");
+
+                            String emailFormat = split[1];
+                            if (emailFormat.equals("fpt.edu.vn")) {
+                                Intent intentSubmit = new Intent(Forgot_Password_Page.this, Confirm_Password_Reset_Page.class);
+                                startActivity(intentSubmit);
+                            } else {
+                                txtWrongEmail.setText("Vui lòng nhập đúng định dạng email: @fpt.edu.vn");
+                            }
                         }
                     } else {
-                        txtWrongEmail.setText("Missing symbol: @ ");
+                        txtWrongEmail.setText("Thiếu ký tư: @ ");
                     }
                 }
             }
-        });
-    }
+    });
+}
 }

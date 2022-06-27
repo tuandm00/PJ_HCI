@@ -3,42 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="88dp"
         android:layout_height="46dp"
+        android:contentDescription="TODO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="@drawable/img"
-        android:contentDescription="TODO" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="178dp"
-        android:layout_height="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.931"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="@drawable/img_1" />
+        app:srcCompat="@drawable/img" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="188dp"
-        android:layout_height="25dp"
-        android:text="FREELANCER JOB"
-        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Công Việc Freelance"
         android:textColor="#0636E6"
-        android:textSize="15sp"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.424"
@@ -50,12 +39,13 @@
         android:id="@+id/imageView3"
         android:layout_width="62dp"
         android:layout_height="33dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintHorizontal_bias="0.908"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.204"
+        app:layout_constraintVertical_bias="0.022"
         app:srcCompat="@drawable/img_2" />
 
     <ImageView
@@ -64,70 +54,98 @@
         android:layout_height="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintHorizontal_bias="0.938"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.204"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.027"
         app:srcCompat="@drawable/img_3" />
+
+    <Button
+        android:id="@+id/buttonQuaylai"
+        android:layout_width="108dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:text="Quay Lại"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/buttonTieptheo"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvFreelancer" />
+
+    <Button
+        android:id="@+id/buttonTieptheo"
+        android:layout_width="126dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="12dp"
+        android:text="Tiếp theo"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvFreelancer" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="342dp"
+        android:layout_width="0dp"
         android:layout_height="75dp"
-        android:layout_marginTop="508dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
         app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvFreelancer"
         app:srcCompat="@drawable/img_4" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="51dp"
         android:layout_height="46dp"
-        android:layout_marginStart="352dp"
         android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.988"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rvFreelancer"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTieptheo"
         app:srcCompat="@drawable/img_5" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvFreelancer"
-        android:layout_width="403dp"
-        android:layout_height="268dp"
-        android:layout_marginTop="224dp"
+        android:layout_width="393dp"
+        android:layout_height="199dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="236dp"
+        android:layout_marginEnd="5dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="110dp"
-        android:layout_height="36dp"
+        android:layout_width="101dp"
+        android:layout_height="30dp"
         android:gravity="center"
         android:text="TÊN"
+        android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/rvFreelancer"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintHorizontal_bias="0.138"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.316" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.944" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="110dp"
-        android:layout_height="36dp"
+        android:layout_width="122dp"
+        android:layout_height="33dp"
         android:gravity="center"
         android:text="THÔNG TIN"
+        android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/rvFreelancer"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintHorizontal_bias="0.865"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.319" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
