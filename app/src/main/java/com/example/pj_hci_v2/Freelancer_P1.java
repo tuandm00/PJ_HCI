@@ -10,7 +10,7 @@ import android.widget.ImageView;
 
 public class Freelancer_P1 extends AppCompatActivity {
     Button btnDanhsachcongviec, btnTimkiemtheoyeucau, btnDaluu;
-    ImageView imgBack;
+    ImageView imgBack, imgProfile;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,5 +48,13 @@ public class Freelancer_P1 extends AppCompatActivity {
             }
         });
 
+        imgProfile = (ImageView) findViewById(R.id.imageView4);
+        imgProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Freelancer_P1.this, Freelancer_P7.class);
+                startActivity(intent);
+            }
+        });
     }
 }

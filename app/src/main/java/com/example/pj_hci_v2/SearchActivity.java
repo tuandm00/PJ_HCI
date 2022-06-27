@@ -19,7 +19,7 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
     private static final String[] paths2 = {"Chọn Lĩnh Vực", "IT", "Thiết kế", "Kinh tế"};
     private static final String[] paths3 = {"Địa Điểm", "Hà Nội", "TPHCM", "Thanh Hóa"};
     private Button btnXN; //nút xác nhận
-    private ImageView imgLogo; //bấm cái icon info
+    private ImageView imgBack, imgLogo; //bấm cái icon info
     private TextView txtLogo; //bấm vào chữ Freelancer
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +75,15 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
             public void onClick(View v) {
                 Intent intent2 = new Intent(SearchActivity.this, Freelancer_P1.class);
                 startActivity(intent2);
+            }
+        });
+
+        imgBack = (ImageView) findViewById(R.id.imageViewBack);
+        imgBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SearchActivity.this, Freelancer_P1.class);
+                startActivity(intent);
             }
         });
     }
