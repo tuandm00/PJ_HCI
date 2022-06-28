@@ -34,18 +34,19 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="234dp"
-        android:layout_height="42dp"
+        android:layout_width="260dp"
+        android:layout_height="67dp"
         android:gravity="center"
-        android:text="FREELANCER JOB"
+        android:text="CÔNG VIỆC FREELANCE"
         android:textColor="#0636E6"
         android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.158" />
+        app:layout_constraintVertical_bias="0.123" />
 
     <ImageView
         android:id="@+id/imageView3"

@@ -41,13 +41,10 @@ public class FreelancerMainActivity extends AppCompatActivity implements OnItemC
         imgBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FreelancerMainActivity.this,Freelancer_P1.class);
+                Intent intent = new Intent(FreelancerMainActivity.this,Login_Page.class);
                 startActivity(intent);
             }
         });
-
-
-
     }
 
     //Click vào nội dung để xem chi tiết

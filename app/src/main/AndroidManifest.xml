@@ -36,6 +36,7 @@
             android:exported="true">
 
         </activity>
+
         <activity
             android:name=".Forgot_Password_Page"
             android:exported="true">
