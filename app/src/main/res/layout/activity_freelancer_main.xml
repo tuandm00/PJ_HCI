@@ -127,10 +127,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/rvFreelancer"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintHorizontal_bias="0.093"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.944" />
+        app:layout_constraintVertical_bias="0.956" />
 
     <TextView
         android:id="@+id/textView4"

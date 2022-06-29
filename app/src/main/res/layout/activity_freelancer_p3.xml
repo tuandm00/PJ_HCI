@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/white"
     tools:context=".Freelancer_P3">
 
     <ImageView
@@ -19,27 +20,15 @@
         app:layout_constraintVertical_bias="0.023"
         app:srcCompat="@drawable/img" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="178dp"
-        android:layout_height="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.931"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="@drawable/img_1" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="234dp"
         android:layout_height="42dp"
         android:gravity="center"
         android:text="Công Việc Freelance"
-        android:textStyle="bold"
         android:textColor="#0636E6"
         android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -51,12 +40,13 @@
         android:id="@+id/imageView3"
         android:layout_width="62dp"
         android:layout_height="33dp"
+        android:layout_marginTop="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintHorizontal_bias="0.908"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.253"
+        app:layout_constraintVertical_bias="0.028"
         app:srcCompat="@drawable/img_2" />
 
     <ImageView
@@ -75,23 +65,26 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="264dp"
+        android:layout_marginTop="120dp"
         android:text="Viết content tiếng Anh mảng Coin ,Crypto"
-        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="132dp"
+        android:layout_width="wrap_content"
         android:layout_height="25dp"
         android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
         android:text="Dịch vụ cần thuê:"
+        android:textColor="@color/black"
         android:textSize="15sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
         app:layout_constraintHorizontal_bias="0.014"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -101,34 +94,40 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="144dp"
         android:text="Viết blog Tiếng Anh"
         android:textColor="#2D5198"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="385dp"
+        android:layout_width="0dp"
         android:layout_height="61dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="20dp"
-        android:text="Mình cần tìm bạn viết Tiếng Anh, viết bài SEO cho website Tiếng Anh về mảng coin, crypto. Tiêu đề mình đưa ra, bạn viết theo tiêu đề đó."
+        android:layout_marginStart="5dp"
 
+        android:layout_marginTop="12dp"
+        android:text="Mình cần tìm bạn viết Tiếng Anh, viết bài SEO cho website Tiếng Anh về mảng coin, crypto. Tiêu đề mình đưa ra, bạn viết theo tiêu đề đó."
+        android:textColor="@color/black"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView52" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
         android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
         android:text="Năng lực:"
+        android:textColor="@color/black"
         android:textSize="15sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
@@ -137,19 +136,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="176dp"
         android:text="SEO, Tiếng Anh, Viết bài"
         android:textColor="#2D5198"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="40dp"
-        android:layout_height="17dp"
-        android:layout_marginStart="4dp"
+        android:layout_width="0dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="36dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        app:layout_constraintEnd_toStartOf="@+id/textView10"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         app:srcCompat="@drawable/img_6" />
@@ -159,7 +163,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:layout_marginEnd="172dp"
+        android:layout_marginEnd="120dp"
         android:text="Phản ánh tin không chính xác"
         android:textColor="#F4511E"
         android:textSize="15sp"
@@ -170,7 +174,7 @@
         android:id="@+id/imageView8"
         android:layout_width="26dp"
         android:layout_height="22dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="64dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
@@ -180,12 +184,14 @@
         android:id="@+id/textViewSave"
         android:layout_width="31dp"
         android:layout_height="25dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
         android:text="Lưu"
         android:textColor="#2D5198"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <Button
@@ -195,6 +201,8 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="144dp"
         android:text="Trang kế"
+        android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
@@ -203,11 +211,13 @@
         android:id="@+id/textView52"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
         android:layout_marginTop="12dp"
         android:text="Chi tiết công việc:"
+        android:textColor="@color/black"
         android:textSize="15sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
