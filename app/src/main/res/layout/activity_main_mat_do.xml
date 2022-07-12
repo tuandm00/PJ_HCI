@@ -167,22 +167,23 @@
 
         <ImageView
             android:id="@+id/pic"
-            android:layout_width="72dp"
-            android:layout_height="46dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="32dp"
+            android:layout_width="55dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="28dp"
+            android:scaleType="fitXY"
             android:src="@drawable/messicon"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"></ImageView>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnMatDo"
             android:layout_width="111dp"
             android:layout_height="48dp"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginStart="116dp"
+            android:layout_marginTop="16dp"
             android:backgroundTint="#EB7511"
-            android:text="Nhặt đồ"
+            android:text="Mất đồ"
             app:layout_constraintStart_toEndOf="@+id/logo"
             app:layout_constraintTop_toTopOf="parent" />
 

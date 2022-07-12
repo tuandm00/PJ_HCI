@@ -37,7 +37,8 @@ public class Home_Page extends AppCompatActivity {
         lostAndFound.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent= new Intent(Home_Page.this,Menu.class);
+                startActivity(intent);
             }
         });
 
@@ -45,8 +46,8 @@ public class Home_Page extends AppCompatActivity {
         imgFreelanceJob.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentFreeLanceJob = new Intent(Home_Page.this, Freelancer_P1.class);
-                startActivity(intentFreeLanceJob);
+//                Intent intentFreeLanceJob = new Intent(Home_Page.this, Freelancer_P1.class);
+//                startActivity(intentFreeLanceJob);
             }
         });
 
@@ -54,8 +55,8 @@ public class Home_Page extends AppCompatActivity {
         freelanceJob.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentFreeLanceJob = new Intent(Home_Page.this, Freelancer_P1.class);
-                startActivity(intentFreeLanceJob);
+//                Intent intentFreeLanceJob = new Intent(Home_Page.this, Freelancer_P1.class);
+//                startActivity(intentFreeLanceJob);
             }
         });
 

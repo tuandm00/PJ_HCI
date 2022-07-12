@@ -5,44 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="376dp"
-        android:layout_height="95dp"
-        android:text="HS đã tạo tài khoản ngày 25-05-2021 và đã xác thực email"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.457"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14"
-        app:layout_constraintVertical_bias="0.142" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="36dp"
-        android:text="03886575912"
-        android:textColor="@color/purple_500"
-        android:textSize="20dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView13"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="32dp"
-        android:text="TungMD2902@fpt.edu.vn"
-        android:textColor="@color/purple_500"
-        android:textSize="20dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView12"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
-
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="41dp"
@@ -53,84 +15,118 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="314dp"
-        android:layout_height="121dp"
+        android:layout_width="309dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginEnd="128dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08"
+        app:layout_constraintVertical_bias="0.049"
         app:srcCompat="@drawable/experience" />
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="409dp"
-        android:layout_height="74dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8"
-        app:srcCompat="@drawable/urprofile" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="151dp"
-        android:layout_height="99dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="128dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9"
-        app:srcCompat="@drawable/account" />
-
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/textViewEmailProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="24dp"
-        android:text="Tên : Đỗ Minh Tứng"
-        android:textSize="20dp"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
-
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
-        app:srcCompat="@drawable/location" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
-        android:text="TP.Hồ Chí Minh"
-        android:textSize="20dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:text="TungMD2902@fpt.edu.vn"
         android:textColor="@color/purple_500"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView12"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAddressProfile" />
+
+    <TextView
+        android:id="@+id/textViewNameProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        android:text="Tên : Đỗ Minh Tứng"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewUserImage" />
+
+    <TextView
+        android:id="@+id/textViewAddressProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:text="TP.Hồ Chí Minh"
+        android:textColor="@color/purple_500"
+        android:textSize="20dp"
         app:layout_constraintStart_toEndOf="@+id/imageView11"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewNameProfile" />
+
+    <TextView
+        android:id="@+id/textViewDesProfile"
+        android:layout_width="376dp"
+        android:layout_height="95dp"
+        android:text="HS đã tạo tài khoản ngày 25-05-2021 và đã xác thực email"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.628"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.115" />
 
     <ImageView
         android:id="@+id/imageView12"
         android:layout_width="40dp"
         android:layout_height="45dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView11"
         app:srcCompat="@drawable/mail" />
 
     <ImageView
-        android:id="@+id/imageView13"
+        android:id="@+id/imageView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNameProfile"
+        app:srcCompat="@drawable/location" />
+
+    <TextView
+        android:id="@+id/textViewPhoneProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:text="03886575912"
+        android:textColor="@color/purple_500"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmailProfile" />
+
+    <ImageView
+        android:id="@+id/imageViewUserImage"
+        android:layout_width="151dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/account" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView12"
         app:srcCompat="@drawable/call" />
@@ -139,11 +135,26 @@
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
         android:text="Giới thiệu"
-        android:textSize="30dp"
         android:textColor="@color/black"
+        android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="393dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewUserImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:srcCompat="@drawable/urprofile" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

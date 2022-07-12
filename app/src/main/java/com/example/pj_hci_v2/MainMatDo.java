@@ -3,6 +3,7 @@ package com.example.pj_hci_v2;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
 
@@ -14,25 +15,27 @@ import java.util.ArrayList;
 
 public class MainMatDo extends AppCompatActivity {
     private ArrayList<Post> postList;
-
+    Button btnMatDo;
     private RecyclerView recyclerView;
-    ImageView barMenu,bell;
+    ImageView barMenu,bell,back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_mat_do);
     barMenu = findViewById(R.id.bar);
     bell = findViewById(R.id.bell);
+    back=findViewById(R.id.back);
+    btnMatDo=findViewById(R.id.btnMatDo);
         recyclerView = findViewById(R.id.rclview);
 
 
         postList = new ArrayList<>();
-        postList.add(new Post(R.drawable.user, "Diệp Đặng A", "4 giờ", "Mình mất thẻ xe dưới bãi xe", R.drawable.thegiuxe, "30", "20 bình luân", "19 chia sẻ"));
-        postList.add(new Post(R.drawable.user, "Diệp Đặng A", "4 giờ", "Mình mất thẻ xe dưới bãi xe", R.drawable.thegiuxe, "30", "20 bình luân", "19 chia sẻ"));
-        postList.add(new Post(R.drawable.user, "Diệp Đặng A", "4 giờ", "Mình mất thẻ xe dưới bãi xe", R.drawable.thegiuxe, "30", "20 bình luân", "19 chia sẻ"));
-        postList.add(new Post(R.drawable.user, "Diệp Đặng A", "4 giờ", "Mình mất thẻ xe dưới bãi xe", R.drawable.thegiuxe, "30", "20 bình luân", "19 chia sẻ"));
-        postList.add(new Post(R.drawable.user, "Diệp Đặng A", "4 giờ", "Mình mất thẻ xe dưới bãi xe", R.drawable.thegiuxe, "30", "20 bình luân", "19 chia sẻ"));
-        postList.add(new Post(R.drawable.user, "Diệp Đặng A", "4 giờ", "Mình mất thẻ xe dưới bãi xe", R.drawable.thegiuxe, "30", "20 bình luân", "19 chia sẻ"));
+        postList.add(new Post( R.drawable.user,"Diệp Đặng A", "4 giờ", R.drawable.thegiuxe));
+//        postList.add(new Post(R.drawable.user, "Diệp Đặng A", "4 giờ", "Mình mất thẻ xe dưới bãi xe", R.drawable.thegiuxe, "30", "20 bình luân", "19 chia sẻ"));
+//        postList.add(new Post(R.drawable.user, "Diệp Đặng A", "4 giờ", "Mình mất thẻ xe dưới bãi xe", R.drawable.thegiuxe, "30", "20 bình luân", "19 chia sẻ"));
+//        postList.add(new Post(R.drawable.user, "Diệp Đặng A", "4 giờ", "Mình mất thẻ xe dưới bãi xe", R.drawable.thegiuxe, "30", "20 bình luân", "19 chia sẻ"));
+//        postList.add(new Post(R.drawable.user, "Diệp Đặng A", "4 giờ", "Mình mất thẻ xe dưới bãi xe", R.drawable.thegiuxe, "30", "20 bình luân", "19 chia sẻ"));
+//        postList.add(new Post(R.drawable.user, "Diệp Đặng A", "4 giờ", "Mình mất thẻ xe dưới bãi xe", R.drawable.thegiuxe, "30", "20 bình luân", "19 chia sẻ"));
 
         PostAdapter postAdapter = new PostAdapter(postList,new IClick(){
             void onClickItem() {
@@ -42,13 +45,17 @@ public class MainMatDo extends AppCompatActivity {
         });
         recyclerView.setAdapter(postAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainMatDo.this,Home_Page.class);
+                startActivity(intent);
+            }
+        });
         barMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 changeMenu();
-
-
             }
         });
 
@@ -56,6 +63,13 @@ public class MainMatDo extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 changeBell();
+            }
+        });
+        btnMatDo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(MainMatDo.this,LostForm.class);
+                startActivity(intent);
             }
         });
 

@@ -47,8 +47,8 @@ public class Forgot_Password_Page extends AppCompatActivity {
                         String[] split = txtEmail.split("@");
                         String emailFormat = split[1];
                         if (emailFormat.equals("fpt.edu.vn")) {
-                            Intent intentSubmit = new Intent(Forgot_Password_Page.this, Confirm_Password_Reset_Page.class);
-                            startActivity(intentSubmit);
+//                            Intent intentSubmit = new Intent(Forgot_Password_Page.this, Confirm_Password_Reset_Page.class);
+//                            startActivity(intentSubmit);
                         } else {
                             txtWrongEmail.setText("Please use email with correct format: @fpt.edu.vn");
                         }

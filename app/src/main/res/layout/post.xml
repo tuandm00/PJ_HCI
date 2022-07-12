@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
 
     <ImageView
@@ -27,8 +27,8 @@
 
     <TextView
         android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="28dp"
         app:layout_constraintStart_toEndOf="@+id/hinhUser"
@@ -36,8 +36,8 @@
 
     <TextView
         android:id="@+id/time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="53dp"
+        android:layout_height="23dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toEndOf="@+id/hinhUser"
@@ -56,42 +56,51 @@
         android:layout_width="414dp"
         android:layout_height="183dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/decription"></ImageView>
+        app:layout_constraintTop_toBottomOf="@+id/decription"
+        tools:srcCompat="@tools:sample/avatars"></ImageView>
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="47dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="36dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="4dp"
         android:src="@drawable/heart"
+        app:layout_constraintEnd_toStartOf="@+id/numberLike"
+        app:layout_constraintHorizontal_bias="0.117"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hinhDoVat"></ImageView>
 
     <TextView
         android:id="@+id/numberLike"
-        android:layout_width="46dp"
-        android:layout_height="18dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        android:layout_width="53dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="40dp"
+        android:text="20 Like"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/numberComment"
         app:layout_constraintTop_toBottomOf="@+id/hinhDoVat" />
 
     <TextView
         android:id="@+id/numberComment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toEndOf="@+id/numberLike"
+        android:layout_width="115dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="128dp"
+        android:text="10 Comment"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hinhDoVat" />
 
     <TextView
         android:id="@+id/numberShare"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="53dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:text="2 Share"
+        android:textAlignment="center"
         app:layout_constraintStart_toEndOf="@+id/numberComment"
         app:layout_constraintTop_toBottomOf="@+id/hinhDoVat" />
 
@@ -106,48 +115,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/numberComment"></ImageView>
 
-    <TextView
-        android:id="@+id/like"
-        android:layout_width="83dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="16dp"
-        android:gravity="center"
-        android:text="LIKE"
-        android:textColor="#4D201B1B"
-        android:textSize="15dp"
-        android:textStyle="bold"
+    <Button
+        android:id="@+id/buttonLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:text="Like"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/numberComment" />
 
-    <TextView
-        android:id="@+id/binhluan"
-        android:layout_width="81dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="76dp"
-
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:text="COMMENT"
-        android:textColor="#4D201B1B"
-        android:textSize="15dp"
-
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/like"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/chiase"
-        android:layout_width="70dp"
-        android:layout_height="41dp"
+    <Button
+        android:id="@+id/buttonShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:gravity="center"
-        android:text="SHARE"
-        android:textColor="#4D201B1B"
-        android:textSize="15dp"
-        android:textStyle="bold"
+        android:text="Share"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/numberComment" />
+
+    <Button
+        android:id="@+id/buttonComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:text="Comment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonShare"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toEndOf="@+id/buttonLike"
+        app:layout_constraintTop_toBottomOf="@+id/numberComment"
+        app:layout_constraintVertical_bias="0.004" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

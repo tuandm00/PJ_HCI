@@ -52,8 +52,8 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
         btnXN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SearchActivity.this, FreelancerMainActivity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(SearchActivity.this, FreelancerMainActivity.class);
+//                startActivity(intent);
             }
         });
 
@@ -62,8 +62,8 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
         imgLogo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(SearchActivity.this, FreelancerMainActivity.class);
-                startActivity(intent1);
+//                Intent intent1 = new Intent(SearchActivity.this, FreelancerMainActivity.class);
+//                startActivity(intent1);
             }
         });
 
@@ -73,8 +73,8 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
         txtLogo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(SearchActivity.this, Freelancer_P1.class);
-                startActivity(intent2);
+//                Intent intent2 = new Intent(SearchActivity.this, Freelancer_P1.class);
+//                startActivity(intent2);
             }
         });
     }

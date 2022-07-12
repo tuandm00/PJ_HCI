@@ -85,6 +85,7 @@
         android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3"
         app:srcCompat="@drawable/fpt" />
 
     <Button
@@ -98,54 +99,48 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/divider3"
         app:layout_constraintVertical_bias="0.989" />
 
     <ImageView
         android:id="@+id/imageViewLost"
         android:layout_width="269dp"
         android:layout_height="160dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="16dp"
         android:scaleType="fitXY"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewChooseImg"
         app:srcCompat="@drawable/orange" />
+
+    <ImageView
+        android:id="@+id/imageViewChooseImg"
+        android:layout_width="27dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="316dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextThoiGianMat2"
+        app:srcCompat="@drawable/image" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="20dp"
         android:text="Thời gian mất"
         android:textColor="@color/black"
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-    <EditText
-        android:id="@+id/editTextThoiGianMat3"
-        android:layout_width="134dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/border"
-        android:backgroundTint="#F7F8F7"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingLeft="10dp"
-        android:text="....."
-        android:textColor="#33000000"
-        app:layout_constraintStart_toEndOf="@+id/editTextThoiGianMat2"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextMotaDoVatLost" />
 
     <EditText
         android:id="@+id/editTextThoiGianMat2"
-        android:layout_width="134dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="259dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/border"
         android:backgroundTint="#F7F8F7"
         android:ems="10"
@@ -154,41 +149,7 @@
         android:text="....."
         android:textColor="#33000000"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="12dp"
-        android:text="Từ ngày"
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="12dp"
-        android:text="Đến ngày"
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
-    <ImageView
-        android:id="@+id/imageViewChooseImg"
-        android:layout_width="27dp"
-        android:layout_height="26dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="312dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextThoiGianMat3"
-        app:srcCompat="@drawable/image" />
 
     <EditText
         android:id="@+id/editTextMotaDoVatLost"

@@ -10,17 +10,16 @@
         android:id="@+id/divider3"
         android:layout_width="409dp"
         android:layout_height="1dp"
-        android:layout_marginBottom="72dp"
+        android:layout_marginBottom="60dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
-        android:id="@+id/editTextBanMatDoVatGi"
+        android:id="@+id/editTextHangDoVatFounded"
         android:layout_width="268dp"
         android:layout_height="48dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/border"
         android:backgroundTint="#F7F8F7"
         android:ems="10"
@@ -28,135 +27,33 @@
         android:paddingLeft="10dp"
         android:text="....."
         android:textColor="#33000000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="68dp"
-        android:text="Vị trí nhặt được"
-        android:textSize="18dp"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="4dp"
-        android:text="Loại đồ vật"
-        android:textSize="18dp"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="68dp"
-        android:text="Hãng đồ vật(Nếu có)"
-        android:textSize="18dp"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="132dp"
-        android:text="Lost &amp; Found"
-        android:textSize="25dp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
-
-    <EditText
-        android:id="@+id/editTextMoTaDoVat"
-        android:layout_width="268dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/border"
-        android:backgroundTint="#F7F8F7"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingLeft="10dp"
-        android:text="....."
-        android:textColor="#33000000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <EditText
-        android:id="@+id/editTextThoiGianMat"
-        android:layout_width="268dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/border"
-        android:backgroundTint="#F7F8F7"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingLeft="10dp"
-        android:text="....."
-        android:textColor="#33000000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="68dp"
-        android:text="Ngày"
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="68dp"
-        android:text="Mô tả đồ vật"
-        android:textSize="18dp"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <EditText
-        android:id="@+id/editTextHangDoVat"
-        android:layout_width="268dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/border"
-        android:backgroundTint="#F7F8F7"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingLeft="10dp"
-        android:text="....."
-        android:textColor="#33000000"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/editTextThoiGianMat2"
+        android:id="@+id/editTextThoiGianMat3Founded"
         android:layout_width="134dp"
         android:layout_height="48dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:backgroundTint="#F7F8F7"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:text="....."
+        android:textColor="#33000000"
+        app:layout_constraintStart_toEndOf="@+id/editTextThoiGianMat2Founded"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/editTextThoiGianMat2Founded"
+        android:layout_width="134dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/border"
         android:backgroundTint="#F7F8F7"
         android:ems="10"
@@ -167,12 +64,47 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="72dp"
+        android:text="Vị trí nhặt được"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="72dp"
+        android:text="Mô tả đồ vật"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="72dp"
+        android:text="Ngày"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
     <EditText
-        android:id="@+id/editTextThoiGianMat3"
-        android:layout_width="134dp"
+        android:id="@+id/editTextViTriNhatFounded"
+        android:layout_width="268dp"
         android:layout_height="48dp"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/border"
         android:backgroundTint="#F7F8F7"
         android:ems="10"
@@ -180,25 +112,111 @@
         android:paddingLeft="10dp"
         android:text="....."
         android:textColor="#33000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="72dp"
         android:text="Thời gian tìm thấy"
         android:textColor="@color/black"
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
+    <EditText
+        android:id="@+id/editTextMotaDoVatFounded"
+        android:layout_width="268dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/border"
+        android:backgroundTint="#F7F8F7"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:text="....."
+        android:textColor="#33000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="27dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.227"
+        app:srcCompat="@drawable/image" />
+
+    <EditText
+        android:id="@+id/editTextDoVatGiFounded"
+        android:layout_width="268dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/border"
+        android:backgroundTint="#F7F8F7"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:text="....."
+        android:textColor="#33000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Lost &amp; Found"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="72dp"
+        android:text="Hãng đồ vật(Nếu có)"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="4dp"
+        android:text="Loại đồ vật"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="414dp"
-        android:layout_height="50dp"
+        android:layout_width="411dp"
+        android:layout_height="52dp"
         android:background="#66F97700"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -207,7 +225,7 @@
             android:id="@+id/textView"
             android:layout_width="218dp"
             android:layout_height="42dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="96dp"
             android:paddingTop="5dp"
             android:text="Student Experienced"
@@ -219,29 +237,31 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="50dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="48dp"
-            android:backgroundTint="#00F97700"
-            android:contentDescription="@string/app_name"
-            android:scaleType="fitXY"
-            app:layout_constraintEnd_toStartOf="@+id/textView"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_goneMarginTop="@android:dimen/app_icon_size"
-            app:srcCompat="@drawable/exit" />
-
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="41dp"
             android:layout_height="38dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.41"
             app:layout_constraintStart_toEndOf="@+id/textView"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.666"
             app:srcCompat="@drawable/book" />
+
+        <ImageView
+            android:id="@+id/imageViewExit"
+            android:layout_width="40dp"
+            android:layout_height="44dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.28"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.875"
+            app:srcCompat="@drawable/back" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -249,24 +269,16 @@
         android:id="@+id/imageView2"
         android:layout_width="153dp"
         android:layout_height="52dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/divider3"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/fpt" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="27dp"
-        android:layout_height="26dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="320dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextThoiGianMat3"
-        app:srcCompat="@drawable/image" />
-
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonDangFounded"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
@@ -277,17 +289,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-        app:layout_constraintVertical_bias="0.979" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="182dp"
-        android:layout_height="76dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="116dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextThoiGianMat2"
-        app:srcCompat="@drawable/iphone" />
+        app:layout_constraintVertical_bias="0.988" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

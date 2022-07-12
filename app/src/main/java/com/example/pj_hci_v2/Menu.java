@@ -41,9 +41,8 @@ public class Menu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(Menu.this,MainActivity.class);
+                Intent intent = new Intent(Menu.this,MainNhatDo.class);
                 startActivity(intent);
-                finish();
 
             }
         });
@@ -51,7 +50,8 @@ public class Menu extends AppCompatActivity {
         thongtin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(Menu.this,ProfileForm.class);
+                startActivity(intent);
             }
         });
 
@@ -59,7 +59,8 @@ public class Menu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
+                Intent intent = new Intent(Menu.this,Home_Page.class);
+                startActivity(intent);
 
 
 

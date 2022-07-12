@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -47,13 +48,13 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
         holder.hinhDoVat.setImageResource(post.getHinhitem());
         holder.name.setText(post.getName());
         holder.time.setText(post.getTime());
-        holder.decription.setText(post.getDecription());
-        holder.nubLike.setText(post.getNubLike());
-        holder.nubComment.setText(post.getNubComment());
-        holder.nubShare.setText(post.getNubShare());
-        holder.Like.setText("Like");
-        holder.Comment.setText("Comment");
-        holder.Share.setText("Share");
+//        holder.decription.setText(post.getDecription());
+//        holder.nubLike.setText(post.getNubLike());
+//        holder.nubComment.setText(post.getNubComment());
+//        holder.nubShare.setText(post.getNubShare());
+//        holder.Like.setText("Like");
+//        holder.Comment.setText("Comment");
+//        holder.Share.setText("Share");
         holder.baCham.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,9 +78,9 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
         TextView nubLike;
         TextView nubComment;
         TextView nubShare;
-        TextView Like;
-        TextView Share;
-        TextView Comment;
+        Button Like;
+        Button Share;
+        Button Comment;
         ImageView baCham;
 
 
@@ -95,9 +96,9 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
             nubLike = itemView.findViewById(R.id.numberLike);
             nubComment = itemView.findViewById(R.id.numberComment);
             nubShare = itemView.findViewById(R.id.numberShare);
-            Like = itemView.findViewById(R.id.like);
-            Comment = itemView.findViewById(R.id.binhluan);
-            Share = itemView.findViewById(R.id.chiase);
+            Like = itemView.findViewById(R.id.buttonLike);
+            Comment = itemView.findViewById(R.id.buttonComment);
+            Share = itemView.findViewById(R.id.buttonShare);
             baCham = itemView.findViewById(R.id.baCham);
 
 
